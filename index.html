@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src = "js/script.js" defer></script>
+    <title>Odin Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class = "header">
+            <div class = "title">Odin Library</div>
+            <div class = "right-side">
+                <div class = "how-to hidden">Add a book to the library by clicking the + button. Remove and change the status by clicking the buttons on the card.</div>
+                <svg class = "question-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z" fill = "currentColor"/></svg>
+            </div>
+        </div>
+        <div class = "library-area">
+            <div class = "library-header">
+                Books
+                <svg class = "addBook-button" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill = "currentColor"/></svg>
+            </div>
+            <div id = "library-empty" class = "hidden">Your library is empty!</div>
+            <div class = "book-section">
+            </div>
+        </div>
+
+        <dialog class = "newBook-dialog">
+            <div class = "dialog-wrapper">
+                <button class = "close-button" autofocus>Close</button>
+                <form class = "book-form">
+                    <div class = "form-question">
+                        <label for="book-title">Book Title</label>
+                        <input type="text" name = "bookTitle" required>
+                    </div>
+                    <div class = "form-question">    
+                        <label for="book-auhtor">Author</label>
+                        <input type="text" name = "bookAuthor" required>
+                    </div>
+                    <div class = "form-question">
+                        <label for="page-count">Page Count</label>
+                        <input type="number" name = "pageCount" required>
+                    </div>
+                    <div class = "form-question">
+                        <label for="status">Read? (check box for read)</label>
+                        <input type="checkbox" name = "bookStatus" class = "checkbox">
+                    </div>
+                    <button type = "submit" id = "form-submit">Add Book</button>
+                </form>
+            </div>
+        </dialog>
+
+        <div class = "footer">
+            <p>Created by tam-justin</p>
+            <p>For the Odin Project</p>
+        </div>
+    </div>
+</body>
+</html>
